@@ -16,7 +16,7 @@ USER_ID_RESULT=$($PSQL "SELECT user_id FROM players WHERE username='$USERNAME'")
 # if player was not found
 if [[ -z $USERNAME_RESULT ]]
   then
-    # greet player
+    # greet gamer 
     echo -e "\nWelcome, $USERNAME! It looks like this is your first time here.\n"
     # add player to database
     INSERT_USERNAME_RESULT=$($PSQL "INSERT INTO players(username) VALUES ('$USERNAME')")
