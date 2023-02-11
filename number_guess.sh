@@ -13,7 +13,7 @@ USERNAME_RESULT=$($PSQL "SELECT username FROM players WHERE username='$USERNAME'
 # get user id
 USER_ID_RESULT=$($PSQL "SELECT user_id FROM players WHERE username='$USERNAME'")
 
-# if player is not found
+# if player was not found
 if [[ -z $USERNAME_RESULT ]]
   then
     # greet player
