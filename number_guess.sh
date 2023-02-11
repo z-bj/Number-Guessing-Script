@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# variable to query database
+# variable to query the database
 PSQL="psql --username=freecodecamp --dbname=number_guess -t --no-align -c"
 
 
