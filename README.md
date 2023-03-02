@@ -5,6 +5,20 @@
 
 # Number — Guess inc. — Script
 
+This is a simple bash script that allows a user to play a number guessing game. The script prompts the user to enter their username, checks if the user exists in the database, and adds them to the database if they are new. Then, it generates a random number between 1 and 1000 and prompts the user to guess the number. The user is given hints and asked to guess again until they guess correctly. Once the user guesses the number correctly, their guess count and the secret number are stored in the database.
+
+### Usage
+
+To run the game, execute the following command in your terminal:
+
+bashCopy code
+
+`./guessing_game.sh`
+
+You must have PostgreSQL installed and running, and you need to set up a database with the name "number_guess". The script assumes that the database has a "players" table with "user_id" (serial), "username" (text), and "timestamp" (timestamp) columns, and a "games" table with "game_id" (serial), "user_id" (integer), "secret_number" (integer), "number_of_guesses" (integer), and "timestamp" (timestamp) columns.
+
+### Script
+
 ``` bash
 
 #!/bin/bash
@@ -95,4 +109,9 @@ echo You guessed it in $GUESS_COUNT tries. The secret number was $SECRET_NUMBER.
 # some comment
 
 ```
+
+### License
+
+This project is licensed under the MIT License.
+
 <img src="https://github.com/z-bj/Number-Guessing-Script/blob/master/deployparrot.gif" width="36">
