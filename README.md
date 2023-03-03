@@ -110,8 +110,6 @@ echo You guessed it in $GUESS_COUNT tries. The secret number was $SECRET_NUMBER.
 
 ```
 
-### License
 
-This project is licensed under the MIT License.
 
 <img src="https://github.com/z-bj/Number-Guessing-Script/blob/master/deployparrot.gif" width="36">
